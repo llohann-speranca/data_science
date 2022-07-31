@@ -16,9 +16,9 @@ from sklearn.model_selection import train_test_split, cross_val_score
 from sklearn.preprocessing import StandardScaler
 from sklearn.metrics import r2_score
 
+path = 'https://storage.googleapis.com/kagglesdsdata/datasets/14872/228180/Admission_Predict_Ver1.1.csv?X-Goog-Algorithm=GOOG4-RSA-SHA256&X-Goog-Credential=gcp-kaggle-com%40kaggle-161607.iam.gserviceaccount.com%2F20220731%2Fauto%2Fstorage%2Fgoog4_request&X-Goog-Date=20220731T104429Z&X-Goog-Expires=259199&X-Goog-SignedHeaders=host&X-Goog-Signature=3485323b2c85d4a0c7b01d0c9760b7f2c65c2cf26656678914eaf5f9c3eb561002c6bad96e0d933bdb1318d573e68cfb080cab13f64fb619f5d9bd5c23b0ee25ff666f38ab81a345d7f08d6592e5efca65cd3cb9fb77507f4f214ad76fd53e8d67667598e20b7a66dc7d740f68bb07f6f35bed4d2a81313e95fc80c834b47e4a1ab34dfb00216b308d267defe4bd9282a3e3f5f70199a93dc1959eec484a0073455e768afd32b53f4a04463e2828ee4f818dc1f54cda9336fc35e4a03e999d544483d14de2c083aeba3c8a6688e29ef54a598ec303a36e266abf5d8a574828958c1c9ff644e91d52a6ccd272895d0a5ecc35e8a6a10b3a0266e3a12b87a53231'
 
-
-df = pd.read_csv('admissions_data.csv')
+df = pd.read_csv(path)
 
 
 X = df.iloc[:,1:-1]
